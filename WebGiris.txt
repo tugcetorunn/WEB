@@ -1,0 +1,38 @@
+Web
+Internet
+Network
+TSP IP
+FTP
+SMTP
+SOA
+SOAP
+Dağıtık mimari
+Protokoller
+Browser
+HTTP
+HTML
+RestFul API
+Frontend - client side
+Backend - server side
+Dağıtık mimari iki bileşenden oluşur - istemci - sunucu
+IP 4 bileşenden oluşur - 1+1+1+1 byte
+- yetmeyeceği düşünüldüğü için IP 6 ya geçilmiştir.
+- ve artık IP 10 çıkacaktır. (iot cihazlar çoğaldığı için)
+Bir siteye girmek istediğimizde arka planda neler olur?
+IIS, Apache
+
+HTML taglerden oluşur. <html> </html>
+w3.org html standartları yazar. hangi taglerin kullanımda olup olmadığını belirlerler.
+developer.mozilla.org
+
+nestcape navigator en eski browser
+
+resim formatları sıkıştırılma şekillerinden dolayı ayrılırlar.
+transparan resim - png
+foto mak sıkıştırılmamış - bmp
+
+query stringlerde veri taşıma yöntemi cookie ve session larda kullanılır. şifre gibi önemli bilgiler bu şekilde taşınmamalı,
+taşınıyorsa hash lemek (md5, sha-256) gerekir.  
+
+url rewriting - seo için - spider numeric algılamıyor.
+ 
