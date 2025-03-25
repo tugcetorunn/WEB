@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* klasik box model */
+        #main{
+            width: 1400px;
+            height: 750px;
+            background-color: lightsalmon;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #header{
+            width: 1400px;
+            height: 150px;
+            background-color: palegreen;
+        }
+        #navigation{ /* linklerin yazıldığı kısım */
+            width: 1400px;
+            height: 50px;
+            background-color: teal;
+        }
+        #content{
+            width: 1400px;
+            height: 500px;
+            background-color: burlywood;
+        }
+        #left{
+            width: 200px;
+            height: 500px;
+            background-color: rosybrown;
+            float: left;
+            border-right: 1px solid black; /* sığmadığı için aşağı atıyor 1px olsa bile */
+        }
+        #middle{
+            width: 1000px;
+            height: 500px;
+            background-color: royalblue;
+            float: left;
+        }
+        #right{
+            width: 199px; /* left, right, mid herhangi birinden 1 px düşersek sığar fakat ileri seviye bir tasarımda bunlar takip edilemez. */
+            height: 500px;
+            background-color: silver;
+            float: left;
+        }
+        #footer{
+            width: 1400px;
+            height: 50px;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- html5 ile -->
+    <!-- main, aside, article, header, footer, nav etiketleri gelmiştir. bu şekilde id ler ile oluşturmuyoruz. -->
+    <div id="main">
+        <div id="header"></div>
+        <div id="navigation"></div>
+        <div id="content">
+            <div id="left"></div>
+            <div id="middle"></div> <!-- div block element old için alt alta sıralanıyor. -->
+            <div id="right"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

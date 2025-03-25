@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 1400px;
+            height: 750px;
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: 200px 1000px 200px;
+            grid-template-rows: 50px 50px 600px 50px;
+        }
+        .box{
+            background-color: lavenderblush;
+            border: 1px solid black;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .nav{
+            grid-column: 1/4;
+        }
+        .content{
+            grid-column: 2/4;
+        }
+        .footer{
+            grid-column: 1/4;
+        }
+        .nav-link li{
+            float: left;
+            margin-left: 50px;
+        }
+        h2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: seagreen;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .footer{
+            grid-column: 1/4;
+        }
+        .galleryImg {
+            width: 25%;
+            height: 25%;
+            object-fit: cover;
+            float: left;
+            margin: 20px;
+        }
+        /* .galleryItem1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .galleryItem2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .galleryItem3 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .galleryItem4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box header">
+            <h2>Gezi Rotası</h2>
+        </div>
+        <div class="box nav">
+            <ul class="nav-link">
+                <li><a href="geziRotasi-index.html">Anasayfa</a></li>
+                <li><a href="geziRotasi-galeri.html">Galeri</a></li>
+                <li><a href="geziRotasi-iletisim.html">Nereyi Gezmek İstersiniz?</a></li>
+            </ul>
+        </div>
+        <div class="box left"></div>
+        <div class="box gallery">
+              <figure class="galleryItem1">
+                <img src="1.jpg" class="galleryImg" alt="Image 1">
+              </figure>
+              <figure class="galleryItem2">
+                <img src="2.jpeg" class="galleryImg" alt="Image 2">
+              </figure>
+              <figure class="galleryItem3">
+                <img src="3.jpg" class="galleryImg" alt="Image 3">
+              </figure>
+              <figure class="galleryItem4">
+                <img src="4.jpg" class="galleryImg" alt="Image 4">
+              </figure>
+              <figure class="galleryItem1">
+                <img src="1.jpg" class="galleryImg" alt="Image 1">
+              </figure>
+              <figure class="galleryItem2">
+                <img src="2.jpeg" class="galleryImg" alt="Image 2">
+              </figure>
+            <!-- <div class="kutu"><img src="1.jpg" alt=""></div>
+            <div class="kutu"><img src="2.jpeg" alt=""></div>
+            <div class="kutu"><img src="3.jpg" alt=""></div>
+            <div class="kutu"><img src="4.jpg" alt=""></div> -->
+        </div>
+        <div class="box footer"></div>
+    </main>
+</body>
+</html>

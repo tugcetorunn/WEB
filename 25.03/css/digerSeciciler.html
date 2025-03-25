@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+grup seçiciler
+*/
+h1, p{
+    color: skyblue;
+}
+div h2{ /* div içindeki tüm h2 ler */
+    color: lightcoral;
+}
+div > h2{ /* div in first child larından olan h2 ler */
+    color: slateblue;
+}
+div + h2{ /* div den sonra gelen ilk h2 */
+    color: mediumseagreen;
+}
+div ~ h2{ /* div den sonra gelen tüm h2 ler*/
+    color: sandybrown;
+}
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+tr:nth-child(even){
+    background-color: lightgreen;
+}
+tr:nth-child(3n){
+    background-color: hotpink;
+}
+tr:nth-child(3n+2){
+    background-color: cadetblue;
+}
+tr:first-child{
+    background-color: #333333;
+}
+input{
+    border: 2px solid rebeccapurple;
+}
+input[type = "text"]{
+    border: 2px dashed forestgreen;
+}
+a:hover{
+    color: blue;
+    font-size: 30px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <!-- linkler -->
+    <a href="temelSeciciler.html">anasayfa</a> <!-- anqer tagi -->
+
+
+    <h1>diğer seçiciler</h1>
+    <p>paragraf</p>
+    <h2>div öncesi</h2>
+    <div>
+        <h2>div içinde ilk h2</h2>
+        <span>
+            <h2>span içinde h2</h2>
+        </span>
+        <h2>div içinde son h2</h2>
+    </div>
+    <h2>divden sonraki h2</h2>
+    <h2>divden sonraki h2</h2>
+    <h3>divden sonraki h3</h3>
+    <h3>divden sonraki h3</h3>
+
+    <table border="1">
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+    </table>
+    <form action="">
+        <input type="text" />
+        <input type="color" />
+        <input type="date" />
+        <input type="email" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

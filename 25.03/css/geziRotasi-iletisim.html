@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 1400px;
+            height: 750px;
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: 200px 1000px 200px;
+            grid-template-rows: 50px 50px 600px 50px;
+        }
+        .box{
+            background-color: lightpink;
+            border: 1px solid black;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .nav{
+            grid-column: 1/4;
+        }
+        .content{
+            grid-column: 2/4;
+        }
+        .footer{
+            grid-column: 1/4;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        .nav-link li{
+            float: left;
+            margin-left: 50px;
+            
+        }
+        h2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: seagreen;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box header">
+            <h2>Gezi Rotası</h2>
+        </div>
+        <div class="box nav">
+            <ul class="nav-link">
+                <li><a href="geziRotasi-index.html">Anasayfa</a></li>
+                <li><a href="geziRotasi-galeri.html">Galeri</a></li>
+                <li><a href="geziRotasi-iletisim.html">Nereyi Gezmek İstersiniz?</a></li>
+            </ul>
+        </div>
+        <div class="box left"></div>
+        <div class="box content">
+            <table border="1">
+                <form action="">
+                    <tr>
+                        <td><label for="isim">İsminiz</label></td>
+                        <td><input type="text" name="isim" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soyisim">Soyisminiz</label></td>
+                        <td><input type="text" name="soyisim" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mailiniz</label></td>
+                        <td><input type="email" name="mail"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telefon Numaranız</label></td>
+                        <td><input type="tel" name="tel" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nereyi gezmek istersiniz?</td>
+                        <td><select name="" id="">
+                            <option value="">İstanbul Turu</option>
+                            <option value="">Karadeniz Turu</option>
+                            <option value="">Ege Turu</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kisi">Kaç kişi gitmek istiyorsunuz?</label></td>
+                        <td><input type="number" name="kisi" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tarih">Gitmek istediğiniz tarihi seçiniz </label></td>
+                        <td><input type="date" name="tarih" id=""></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="box footer"></div>
+    </main>
+</body>
+</html>
