@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mavi{
+            color: blue;
+        }
+    </style>
+    <script>
+        function findByTagName(){
+            let h2s = document.getElementsByTagName("h2")
+
+            for(let item of h2s){
+                item.style.color = "pink"
+            }
+        }
+
+        function findByClassName(){
+            let mavis = document.getElementsByClassName("mavi")
+
+            for(let item of mavis){
+                item.style.color = "green"
+            }
+        }
+
+        function finByQuery(){
+            let elements = document.querySelectorAll("div h2")
+            for (const element of elements) {
+                element.style.color = "red"
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h2>html</h2>
+    <h2>css</h2>
+    <div>
+        <h2>js</h2>
+    </div>
+
+    <h3 class="mavi">İstanbul</h3>
+    <h3 class="mavi">Ankara</h3>
+    <h3>Bursa</h3>
+
+    <button onclick="findByTagName()">tagName</button>
+    <button onclick="findByClassName()">className</button>
+    <button onclick="finByQuery()">query</button>
+</body>
+</html>

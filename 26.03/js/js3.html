@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // döngüler -> c# ta 4 döngü, js te 6 döngü var.
+        // for
+        // while
+        // do-while
+        
+        for (let i = 0; i < 5; i++) {
+            document.writeln(i)
+        }
+
+        var sayac = 0;
+        while (sayac < 10) {
+            sayac++
+            document.writeln(sayac)
+        }
+
+        var counter = 0
+        do {
+            counter++
+            document.writeln(counter)
+        } while (counter < 10);
+
+        // es6 ile birlikte var yerine let ya da const kullanımı öneriliyor.
+
+        // var - let
+        for (var i = 0;  i < 4; i++)
+            document.writeln(i)
+        
+        document.writeln(">> " + i) // i normalde for scope u için tanımlanmıştır fakat var old için global olarak kullanılabiliyor.
+          
+        for (let i = 0;  i < 4; i++)
+            document.writeln(i)
+        
+        // document.writeln(">> " + i) // bu satırı çalıştırmaz hata verir.
+
+
+    </script>
+</body>
+</html>

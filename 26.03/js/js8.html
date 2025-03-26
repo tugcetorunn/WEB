@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function elementEkle(){
+            let div = document.getElementById("kutu")
+            let h1 = document.createElement("h1")
+            h1.innerHTML = "bu etiket yeni oluşturuldu"
+
+            div.appendChild(h1)
+        }
+        function elementEkle2(){
+            let div = document.getElementById("kutu")
+            div.innerHTML = "<u><h1>deneme</h1></u>"
+        }
+    </script>
+</head>
+<body>
+    <div id="kutu"></div>
+    <button onclick="elementEkle()">element ekle</button>
+    <button onclick="elementEkle2()">element ekle</button>
+    <script>
+        // sayfaya yeni element ekleme, çıkarma, değiştirme
+
+
+    </script>
+</body>
+</html>

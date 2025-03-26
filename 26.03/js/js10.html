@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validate.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <table>
+        <form action="" id="form">
+            <tr>
+                <td>Ad : </td>
+                <td><input type="text" id="ad"/></td>
+            </tr>
+            <tr>
+                <td>Soyad : </td>
+                <td><input type="text" id="soyad"/></td>
+            </tr>
+            <tr>
+                <td>Meslek : </td>
+                <td><input type="text" id="meslek"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" id="gonder" onclick="return kontrolEt()">Gönder</button></td> <!-- return false ya da true mekanizması sağlayarak submit in postback etmesini belli şartlar ile valide etmiş oluyor. -->
+            </tr>
+        </form>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // diziler(arrays)
+
+        let d1 = new Array()
+        let d2 = new Array(10) // constructora kapasiteyi gönderiyoruz
+        let d3 = new Array(5, 6, 7, 8, 9, 10)
+        let d4 = []
+        let d5 = [45, 34, 16, 48]
+        let d6 = [45]
+
+        document.writeln(d1.length)
+        document.writeln(d2.length)
+        document.writeln(d3.length)
+        document.writeln(d4.length)
+        document.writeln(d5.length)
+        document.writeln(d6.length)
+
+        document.writeln("<br>")
+        for (let i = 0; i < d3.length; i++) {
+            document.writeln(d3[i])
+        }
+
+        // diğer döngüler
+
+        // for-in (index leri gönderir)
+        // for-of (foreach gibi elemanları gönderir)
+        // foreach bir metoddur
+
+        document.writeln("<br>")
+        for (let i in d3) {
+            document.writeln(i + " - " + d3[i] + " /")
+        }
+
+        document.writeln("<br>")
+        for (let i of d3) {
+            document.writeln(i)
+        }
+
+        document.writeln("<br>")
+        d3.forEach(element => document.writeln(element)); // erov operatörü =>
+
+        d3.push(27) // lifo
+        d3.pop() // array ler c# taki stack gibi de kullanılabilir
+
+        d3.unshift(222) // fifo
+        d3.shift() // array ler c# taki queue gibi de kullanılabilir
+
+        document.writeln("<br>")
+        document.writeln(d3.findIndex(x => x == 7)) 
+        document.writeln(d3.findIndex(function(x){ return x == 7}))
+        document.writeln("<br>")
+        document.writeln(d3) // virgüllü şekilde array i direk yazar
+    </script>
+</body>
+</html>

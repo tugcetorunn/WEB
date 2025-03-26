@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mavi{
+            color: steelblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function bul(){
+            let baslik = document.getElementById("baslik")
+            baslik.innerHTML = "değişti..."
+
+            // 1. yöntem
+            // baslik.style.color = "lightblue"
+            // 2. yöntem
+            //baslik.className = "mavi"
+            // 3. yöntem
+            baslik.setAttribute("style", "color: red")
+        }
+    </script>
+</head>
+<body>
+    <h1 id="baslik">merhaba css</h1>
+    <button onclick="bul()">id ye göre ara</button>
+    <script>
+
+        // dom manipülasyonları (dom - document object model)
+        let p = document.getElementById("prg")
+        p.style.color = "pink" // çalışmaz html dosyaları sırayla çalışır bu script çalışırken prg id li p elementi oluşmamıştır.
+    </script>
+    <p id="prg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, laborum voluptas. Magni ipsam inventore labore natus mollitia beatae dolores necessitatibus recusandae, nulla, nihil nemo itaque architecto perspiciatis quas libero ex.</p>
+</body>
+</html>

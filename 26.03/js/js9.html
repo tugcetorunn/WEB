@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tablo.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <!-- 
+        kullanıcı tarafından girilen satır ve sütun sayısına göre bir tablo çiziniz
+     -->
+     <div id="tablo"></div>
+
+     Satir<input type="text" id="satir"/>
+     Sutun<input type="text" id="sutun"/>
+     <button onclick="tabloOlustur2()">tablo oluştur</button>
+     <table id="tablo" border="1">
+        
+     </table>
+     <script>
+        let satirStr = prompt("satır sayısı giriniz : ")
+        let sutunStr = prompt("sutun sayısı giriniz : ")
+
+        let satir = parseInt(satirStr)
+        let sutun = parseInt(sutunStr) 
+        tabloOlustur(satir, sutun)
+     </script>
+</body>
+</html>

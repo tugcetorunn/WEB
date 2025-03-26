@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // şart ifadeleri -> c# taki gibi if else, switch case dir.
+        if (5 == 5) {
+            document.writeln("")
+        } else {
+            document.writeln("")
+        }
+
+        var gun = 1
+        switch (gun) {
+            case 1:
+            document.writeln("pazartesi")
+                break;
+            case 2:
+            document.writeln("salı")
+                break;
+            case 3:
+            document.writeln("çarşamba")
+                break;
+            case 4:
+            document.writeln("perşembe")
+                break;
+            case 5:
+            document.writeln("cuma")
+                break;
+            case 6:
+            document.writeln("cumartesi")
+                break;
+            case 7:
+            document.writeln("pazar")
+                break;
+            default:
+                break;
+        }
+    
+        document.writeln("<br>")
+
+        // switch-case özel kullanım
+        let number = 3
+        switch (true) {
+            case number > 5:
+                document.writeln("sayı 5 ten büyük")
+                break;
+            case number <= 5:
+                document.writeln("sayı 5 veya 5 ten küçük")
+                break;
+            default:
+                break;
+        }
+        
+    </script>
+</body>
+</html>

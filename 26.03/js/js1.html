@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ekrana bir şeyler yazdırma
+        document.writeln("merhaba js");
+        document.writeln("<h1>merhaba js</h1>");
+
+        // console a bir şeyler yazdırma
+        console.log("console yazdık");
+
+        // veri tipleri
+        var d1 = "merhaba"; // str
+        var d2 = 'naber' // str
+        var d3 = true // boolean
+        var d4 = 123 // number (c# ta tamsayı olarak 8 ondaklıklı olarak 3 veri tipi vardır. js te sadece number olarak ondalıklı tutulur. dezavantajdır. cpu da ondalıklı sayılar yavaş derlenir.)
+        var d5 = 45.16 // number
+        var d6 = new Object() // obj
+        var d7 = {} // obj
+        var d8 = [] // obj
+        var d9 = "dedi 'naber?'" // str
+
+        document.writeln("<br>")
+        document.writeln(typeof(d1))
+        document.writeln(typeof(d2))
+        document.writeln(typeof(d3))
+        document.writeln(typeof(d4))
+        document.writeln(typeof(d5))
+        document.writeln(typeof(d6))
+        document.writeln(typeof(d7))
+        document.writeln(typeof(d8))
+        document.writeln(typeof(d9))
+
+        // js te 4 temel tip vardır. str, number, obj, bool
+
+        // alert(), prompt(), confirm()
+
+        alert("merhaba js")
+        alert("hoşgeldin " + prompt("adınızı girin : "))
+        alert(confirm("emin misiniz?")) 
+
+        // operatörler
+
+        // = atama operatörü
+        // == karşılaştırma op.
+        // === karşılaştırma op. (özel)
+
+        document.writeln("<br>")
+        document.writeln(5 == 5) // içeriği karşılaştırır. tipe bakmaz.
+        document.writeln(5 == '5')
+        document.writeln('5' == 5)
+        document.writeln('5' == '5')
+
+        // c# ta bu şekilde karşılaştırılmaz (farklı tipteki değişkenler). design time da yani yazarken hata verir.
+
+        document.writeln("<br>")
+        document.writeln(5 === 5) // değişkenin tipini de karşılaştırır.
+        document.writeln(5 === '5')
+        document.writeln('5' === 5)
+        document.writeln('5' === '5')
+
+        
+    </script>
+</body>
+</html>
